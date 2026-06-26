@@ -1,0 +1,17 @@
+{
+  "name": "tencentdb-plugins",
+  "plugins": [
+    {
+      "name": "tencentdb-memory",
+      "source": {
+        "source": "local",
+        "path": "./tencentdb-memory"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

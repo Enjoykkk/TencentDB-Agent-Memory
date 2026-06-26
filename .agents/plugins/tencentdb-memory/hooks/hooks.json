@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node D:/xiniuniao/TencentDB-Agent-Memory/.agents/plugins/tencentdb-memory/hooks/recall.mjs",
+            "commandWindows": "node D:/xiniuniao/TencentDB-Agent-Memory/.agents/plugins/tencentdb-memory/hooks/recall.mjs",
+            "timeout": 10,
+            "statusMessage": "Recalling memory context…"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node D:/xiniuniao/TencentDB-Agent-Memory/.agents/plugins/tencentdb-memory/hooks/capture.mjs",
+            "commandWindows": "node D:/xiniuniao/TencentDB-Agent-Memory/.agents/plugins/tencentdb-memory/hooks/capture.mjs",
+            "timeout": 30,
+            "statusMessage": "Capturing conversation turn…"
+          }
+        ]
+      }
+    ]
+  }
+}

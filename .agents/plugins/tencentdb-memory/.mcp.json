@@ -1,0 +1,10 @@
+{
+  "mcp_servers": {
+    "tdai-memory": {
+      "command": "node",
+      "args": [
+        "D:/xiniuniao/TencentDB-Agent-Memory/.agents/plugins/tencentdb-memory/mcp-server.mjs"
+      ]
+    }
+  }
+}

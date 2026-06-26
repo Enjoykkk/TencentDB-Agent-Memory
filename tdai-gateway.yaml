@@ -1,0 +1,24 @@
+  server:
+    port: 8420
+    host: 127.0.0.1
+    # apiKey: "your-secret-key"   # 可选，设置后启用 Bearer 鉴权
+    corsOrigins: []              # 可选，CORS 白名单
+
+  data:
+    baseDir: ~/.memory-tencentdb/memory-tdai
+
+  llm:
+    baseUrl: https://api.deepseek.com/
+    apiKey: sk-fc186bae082a40dfaf41b4695f8ed3db
+    model: deepseek-v4-pro
+    maxTokens: 4096
+    timeoutMs: 120000
+
+  memory:
+    capture:
+      enabled: true
+    recall:
+      enabled: true
+      maxResults: 5
+    extraction:
+      enabled: true
